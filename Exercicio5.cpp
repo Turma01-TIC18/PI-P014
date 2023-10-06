@@ -41,11 +41,14 @@ int main() {
     meuVoo.horaChegada = 1500; 
     meuVoo.horaEmbarque = 930; 
 
+
+    meuVoo.exibirInformacoes();
+
     // Implementar codigo
 
 
 
     
     return 0;
-    
+
 }
