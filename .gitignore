@@ -1,8 +1,7 @@
+dev-FranklinPereira
 # Prerequisites
 *.d
-output
-.vscode
-*.json
+
 # Compiled Object files
 *.slo
 *.lo
@@ -32,3 +31,6 @@ output
 *.exe
 *.out
 *.app
+.vscode
+\output
+*.json

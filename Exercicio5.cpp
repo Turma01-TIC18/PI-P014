@@ -15,7 +15,7 @@ struct Voo {
 
 
     int calcularHoraPartida() {
-        return horaEmbarque - tempoVoo;
+      return horaEmbarque - tempoVoo;
         
     }
 
@@ -42,7 +42,10 @@ int main() {
     meuVoo.horaEmbarque = 930; 
 
 
+
     meuVoo.exibirInformacoes();
+
+
 
     // Implementar codigo
 
@@ -50,5 +53,7 @@ int main() {
 
     
     return 0;
+
+
 
 }
