@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 struct Calculadora {
     int num1;
     int num2;
@@ -31,15 +30,14 @@ struct Calculadora {
 
 int main() {
     Calculadora calc;
-
-    // Solicita ao usuário os dois números inteiros
+    
     cout << "Digite o primeiro número inteiro: ";
     cin >> calc.num1;
     cout << "Digite o segundo número inteiro: ";
     cin >> calc.num2;
 
     int escolha;
-    // Solicita ao usuário que escolha a operação
+    
     cout << "Escolha a operação:" << endl;
     cout << "1. Soma" << endl;
     cout << "2. Subtração" << endl;
@@ -48,8 +46,7 @@ int main() {
     cin >> escolha;
 
     int resultado;
-
-    // Realiza a operação com base na escolha do usuário
+    
     switch (escolha) {
         case 1:
             resultado = calc.soma();
