@@ -2,21 +2,26 @@
 
 using namespace std;
 
-
-int dividir(int n1, int n2){
-
-    int divisao;
-    divisao = n1/n2;
-
-
-    return divisao;
-}
-
 int main (){
 
+    int num1, num2;
+    char operacao;
+/*implementar cout de entrada a variável de escolha é operacao*/
+
+switch (operacao){
     
+    case '+':
+        cout << "Resultado: " << num1 + num2 << endl;
+        break;
 
+    case '-':
+        cout << "Resultado: " << num1 - num2 << endl;
+        break;
 
+    /*Implementar novas funcionalidades*/
+        
+        break;
 
-    return 0;
+}
+return 0;
 }
