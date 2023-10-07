@@ -31,18 +31,19 @@ struct Calculadora {
 int main() {
     Calculadora calc;
     
-    cout << "Digite o primeiro número inteiro: ";
-    cin >> calc.num1;
-    cout << "Digite o segundo número inteiro: ";
-    cin >> calc.num2;
-
-    int escolha;
-    
     cout << "Escolha a operação:" << endl;
+    cout << "" << endl;
+
     cout << "1. Soma" << endl;
     cout << "2. Subtração" << endl;
     cout << "3. Multiplicação" << endl;
     cout << "4. Divisão" << endl;
+    cout << "" << endl;
+    
+    cout << "Digite o primeiro número inteiro: ";
+    cin >> calc.num1;
+    cout << "Digite o segundo número inteiro: ";
+    cin >> calc.num2;
     cin >> escolha;
 
     int resultado;
