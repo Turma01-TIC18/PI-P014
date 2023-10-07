@@ -26,8 +26,13 @@ struct Voo {
     }
 
     void exibirInformacoes() {
-        // Implementar codigo
-
+        cout << "Numero do Voo: " << numVoo << endl;
+        cout << "Origem: " << origem << endl;
+        cout << "Destino: " << destino << endl;
+        cout << "Duração do Voo: " << tempoVoo << " minutos" << endl;
+        cout << "Hora de Saida: " << horaSaida << endl;
+        cout << "Hora de Chegada: " << horaChegada << endl;
+        cout << "Hora de Embarque: " << horaEmbarque << endl;
     }
 };
 
