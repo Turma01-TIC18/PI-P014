@@ -2,6 +2,7 @@
 
 using namespace std;
 
+
 struct Calculadora {
     int num1;
     int num2;
@@ -30,6 +31,8 @@ struct Calculadora {
 
 int main() {
     Calculadora calc;
+
+   int escolha;
     
     cout << "Escolha a operação:" << endl;
     cout << "" << endl;
@@ -47,7 +50,7 @@ int main() {
     cin >> escolha;
 
     int resultado;
-    
+
     switch (escolha) {
         case 1:
             resultado = calc.soma();
@@ -74,4 +77,3 @@ int main() {
 
     return 0;
 }
-
