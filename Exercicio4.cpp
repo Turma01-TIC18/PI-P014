@@ -7,7 +7,6 @@ struct Calculadora {
     int num1;
     int num2;
 
-
     int soma() {
         return num1 + num2;
     }
@@ -17,13 +16,20 @@ struct Calculadora {
     }
 
     int multiplicacao() {
-        //Implementar
+        return num1 * num2;
     }
 
     int divisao() {
-        //Implementar
+        if (num2 != 0) {
+            return num1 / num2;
+        } else {
+            cout << "Erro: Divisão por zero!" << endl;
+            return 0;
+        }
     }
 };
+
+    
 
 int main() {
     Calculadora calc;
@@ -44,26 +50,7 @@ int main() {
     cin >> escolha;
 
 
-    int soma() {
-        // Implementar 
-    }
-
-    int subtracao() {
-        //Implementar
-    }
-
-    int multiplicacao() {
-        return num1 * num2;
-    }
-
-    int divisao() {
-        if (num2 != 0) {
-            return num1 / num2;
-        } else {
-            cout << "Erro: Divisão por zero!" << endl;
-            return 0;
-        }
-    }
+   
 };
 
 int main() {
@@ -90,7 +77,6 @@ int main() {
     
     switch (escolha) {
         case 1:
-
             resultado = calc.soma();
             cout << "Resultado da Soma: " << resultado << endl;
             break;
@@ -98,11 +84,6 @@ int main() {
            resultado = calc.subtracao();
             cout << "Resultado da Subtracao: " << resultado << endl;
             break;
-
-            //Implementar
-        case 2:
-           //Implementar
-
         case 3:
             resultado = calc.multiplicacao();
             cout << "Resultado da Multiplicação: " << resultado << endl;
@@ -114,11 +95,8 @@ int main() {
             }
             break;
         default:
-
             cout << "Opção inválida!" << endl;
             break;
-
-
            
     }
 
