@@ -53,11 +53,16 @@ int main() {
     }
 
     int multiplicacao() {
-        //Implementar
+        return num1 * num2;
     }
 
     int divisao() {
-        //Implementar
+        if (num2 != 0) {
+            return num1 / num2;
+        } else {
+            cout << "Erro: Divisão por zero!" << endl;
+            return 0;
+        }
     }
 };
 
@@ -99,20 +104,25 @@ int main() {
            //Implementar
 
         case 3:
-            //Implementar
+            resultado = calc.multiplicacao();
+            cout << "Resultado da Multiplicação: " << resultado << endl;
+            break;
         case 4:
-            //Implementar
+            resultado = calc.divisao();
+            if (resultado != 0) {
+                cout << "Resultado da Divisão: " << resultado << endl;
+            }
             break;
         default:
 
-            cout << "Opcao invalida!" << endl;
+            cout << "Opção inválida!" << endl;
             break;
+
+
+           
     }
 
-    return 0;
-
-            //Implementar
-    }
+    
 
     return 0;
 }
