@@ -22,7 +22,7 @@ struct Voo {
     bool estaAtrasado() {
         int horaAtual;  
         return horaAtual > horaChegada;
-        
+
     }
 
     void exibirInformacoes() {
@@ -52,8 +52,18 @@ int main() {
     meuVoo.exibirInformacoes();
 
 
+    int horaPartida = meuVoo.calcularHoraPartida();
+    cout << "Hora de Partida: " << horaPartida << endl;
 
-    // Implementar codigo
+    bool atrasado = meuVoo.estaAtrasado();
+
+    if (atrasado) {
+        cout << "O voo está atrasado." << endl;
+    } 
+    else {
+        cout << "O voo estah no horario previsto." << endl;
+
+    }
 
 
 
