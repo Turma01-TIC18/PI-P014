@@ -20,7 +20,8 @@ struct Voo {
     }
 
     bool estaAtrasado() {
-        // Implementar codigo
+        int horaAtual;  
+        return horaAtual > horaChegada;
         
     }
 
