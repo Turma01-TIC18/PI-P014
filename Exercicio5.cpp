@@ -15,18 +15,24 @@ struct Voo {
 
 
     int calcularHoraPartida() {
-        // Implementar codigo
+      return horaEmbarque - tempoVoo;
         
     }
 
     bool estaAtrasado() {
-        // Implementar codigo
+        int horaAtual;  
+        return horaAtual > horaChegada;
         
     }
 
     void exibirInformacoes() {
-        // Implementar codigo
-
+        cout << "Numero do Voo: " << numVoo << endl;
+        cout << "Origem: " << origem << endl;
+        cout << "Destino: " << destino << endl;
+        cout << "Duração do Voo: " << tempoVoo << " minutos" << endl;
+        cout << "Hora de Saida: " << horaSaida << endl;
+        cout << "Hora de Chegada: " << horaChegada << endl;
+        cout << "Hora de Embarque: " << horaEmbarque << endl;
     }
 };
 
@@ -42,13 +48,19 @@ int main() {
     meuVoo.horaEmbarque = 930; 
 
 
+
     meuVoo.exibirInformacoes();
 
-    // Implementar codigo
+    int horaPartida = meuVoo.calcularHoraPartida();
+    cout << "Hora de Partida: " << horaPartida << endl;
 
+    bool atrasado = meuVoo.estaAtrasado();
+    if (atrasado) {
+        cout << "O voo está atrasado." << endl;
+    } else {
+        cout << "O voo está no horário previsto." << endl;
+    }
 
-
-    
     return 0;
 
 }
