@@ -2,26 +2,67 @@
 
 using namespace std;
 
-int main (){
 
-    int num1, num2;
-    char operacao;
-/*implementar cout de entrada a variável de escolha é operacao*/
+struct Calculadora {
+    int num1;
+    int num2;
 
-switch (operacao){
+    int soma() {
+        return num1 + num2;
+    }
+
+    int subtracao() {
+        return num1 - num2;
+    }
+
+    int multiplicacao() {
+        //Implementar
+    }
+
+    int divisao() {
+        //Implementar
+    }
+};
+
+int main() {
+    Calculadora calc;
+
     
-    case '+':
-        cout << "Resultado: " << num1 + num2 << endl;
-        break;
+    cout << "Digite o primeiro numero inteiro: ";
+    cin >> calc.num1;
+    cout << "Digite o segundo numero inteiro: ";
+    cin >> calc.num2;
 
-    case '-':
-        cout << "Resultado: " << num1 - num2 << endl;
-        break;
+    int escolha;
+    
+    cout << "Escolha a operacao:" << endl;
+    cout << "1. Soma" << endl;
+    cout << "2. Subtracao" << endl;
+    cout << "3. Multiplicacao" << endl;
+    cout << "4. Divisao" << endl;
+    cin >> escolha;
 
-    /*Implementar novas funcionalidades*/
-        
-        break;
+    int resultado;
 
-}
-return 0;
+    
+    switch (escolha) {
+        case 1:
+            resultado = calc.soma();
+            cout << "Resultado da Soma: " << resultado << endl;
+            break;
+        case 2:
+           resultado = calc.subtracao();
+            cout << "Resultado da Subtracao: " << resultado << endl;
+            break;
+        case 3:
+            //Implementar
+        case 4:
+            //Implementar
+            break;
+        default:
+            cout << "Opcao invalida!" << endl;
+            break;
+    }
+
+    return 0;
 }
