@@ -54,7 +54,7 @@ int main() {
             break;
         case 2:
             resultado = calc.subtracao();
-            cout "Resultado da Subtração: " << resultado << endl;
+            cout << "Resultado da Subtração: " << resultado << endl;
             break;
         case 3:
             resultado = calc.multiplicacao();
